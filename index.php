@@ -6,5 +6,12 @@
 </head>
 <body>
 
+<h1 class="title"></h1>
+<ul>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+
 </body>
 </html>
