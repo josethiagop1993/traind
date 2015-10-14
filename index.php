@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1 class="title"></h1>
+<h1 class="title">HOME</h1>
 <ul>
     <li><a href=""></a></li>
     <li><a href=""></a></li>
