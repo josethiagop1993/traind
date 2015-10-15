@@ -28,11 +28,6 @@ h1.font-light,h2.font-light,h3.font-light,h4.font-light,h5.font-light,h6.font-li
 	color: #fff;
 }
 
-.big-heading {
-	font-size: 48px;
-	font-weight: 700;
-}
-
 p {
     margin: 0 0 20px;
 
@@ -40,25 +35,6 @@ p {
 
 p.lead {
 	font-weight: 600;
-}
-
-.highlight-light {
-	background-color: rgba(255,255,255,.5);
-	padding: 20px;
-	display: inline-block;
-	color: #111;
-}
-
-.highlight-dark {
-	background-color: rgba(0,0,0,.5);
-	padding: 20px;
-	display: inline-block;
-	color: #fff;
-}
-
-.highlight-color {
-	padding: 20px;
-	display: inline-block;
 }
 
 a {
@@ -70,34 +46,6 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-}
-
-blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
-  font-size: 24px;
-	line-height: 1.5em;
-  font-weight: 300;
-  color: #999;
-}
-
-blockquote.bg-light {
-	background-color: rgba(255,255,255,.8);
-	padding: 20px;
-	color: #222;
-}
-
-blockquote.bg-dark {
-	background-color: rgba(0,0,0,.8);
-	padding: 20px;
-}
-
-blockquote strong {
-  font-weight: 700;
-}
-
-.light {
-    font-weight: 400;
 }
 
 
@@ -200,12 +148,6 @@ blockquote strong {
 .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 4em; margin: 15px 0; font-weight: 600; }
 .home-section .bg-funcoes .txt-funcoes p { color: #303844; font-size: 1.6em; line-height: 1.5em; }
 
-.inner-section {
-    padding-top: 110px;
-    padding-bottom: 110px;
-}
-
-
 .section-heading h2 {
 	font-size: 48px;
 	letter-spacing: -1px;
@@ -219,27 +161,16 @@ blockquote strong {
 	line-height: 1.6em;
 }
 
-.color-dark .section-heading h2 {
-	color: #111;
+.color-equipe .section-heading h2 {
+	color: #ecedef;
 }
-.color-dark .section-heading p {
-	color: #444;
-}
-
-.color-dark .divider-short {
-	background: #666;
-}
-.color-dark .divider-header {
-	background: #666;
+.color-equipe .section-heading p {
+	color: #ecedef;
 }
 
-.color-light .divider-short {
-	background: #666;
+.color-design .section-heading h2 {
+    color: #1f2830;
 }
-.color-light .divider-header {
-	background: #666;
-}
-
 
 .color-light .section-heading h2 {
 	color: #fff;
@@ -252,33 +183,36 @@ blockquote strong {
 	color: #fefefe;
 }
 
-/* --- section bg var --- */
 
-.bg-white {
-	background: #fff;
+/* --- BG SECTION--- */
+.bg-equipe {
+	background: #303945;
 }
-
-.bg-gray {
-	background: #f9f9f9;
+.bg-design {
+    background: #88af34;
 }
-
-
 .bg-dark {
 	background: #404040;
 }
+.bg-contato {
+    background: rgba(241,244,249,1);
+    background: -moz-linear-gradient(top, rgba(241,244,249,1) 0%, rgba(206,228,240,1) 75%, rgba(206,228,240,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,244,249,1)), color-stop(75%, rgba(206,228,240,1)), color-stop(100%, rgba(206,228,240,1)));
+    background: -webkit-linear-gradient(top, rgba(241,244,249,1) 0%, rgba(206,228,240,1) 75%, rgba(206,228,240,1) 100%);
+    background: -o-linear-gradient(top, rgba(241,244,249,1) 0%, rgba(206,228,240,1) 75%, rgba(206,228,240,1) 100%);
+    background: -ms-linear-gradient(top, rgba(241,244,249,1) 0%, rgba(206,228,240,1) 75%, rgba(206,228,240,1) 100%);
+    background: linear-gradient(to bottom, rgba(241,244,249,1) 0%, rgba(206,228,240,1) 75%, rgba(206,228,240,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f4f9', endColorstr='#cee4f0', GradientType=0 );
+    padding-top: 50px;
+}
 
-/* --- section color var --- */
-
+/* --- COLOR SECTION --- */
 .text-light {
 	color: #fff;
 }
 
 
-
-/* ===========================
---- Intro
-============================ */
-
+/* =========================== INTRO ============================ */
 .intro {
 	width:100%;
 	position:relative;
@@ -289,7 +223,6 @@ blockquote strong {
 	position:relative;
 	padding:120px 0 20px;
 }
-
 .brand-heading {
     font-size: 40px;
 }
@@ -313,11 +246,9 @@ section#intro {
     width: 100%;
     max-height: 100%;
 }
-
 .carousel-control {
     width: 0;
 }
-
 .carousel-control.left,
 .carousel-control.right {
 	opacity: 1;
@@ -326,43 +257,34 @@ section#intro {
 	background-repeat: no-repeat;
 	text-shadow: none;
 }
-
 .carousel-control.left span {
 	padding: 0;
 }
-
 .carousel-control.right span {
 	padding: 0;
 }
-
 .carousel-control .glyphicon-chevron-left, 
 .carousel-control .glyphicon-chevron-right, 
 .carousel-control .icon-prev, 
 .carousel-control .icon-next {
 	position: absolute;
-	top: 45%;
+	top: 48%;
 	z-index: 5;
 	display: inline-block;
 }
-
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
 	left: 50px;
 }
-
 .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-next {
 	right: 50px;
 }
-
-
-
 .carousel-control.left span:hover,
 .carousel-control.right span:hover {
 	opacity: .7;
 	filter: alpha(opacity=70);
 }
-
 .carousel-inner > .item {
   margin-left:0;
   margin-top:0;
@@ -380,30 +302,34 @@ section#intro {
   padding-left: 0;
 }
 
+video {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    max-height: 100%;
+    border: 0;
+    background-color: transparent;
+}
 
 /* Carousel Header Styles */
 .header-text {
     position: absolute;
-    top: 20%;
-    left: 1.8%;
+    top: 18%;
+    left: 1%;
     right: auto;
-    width: 96.66666666666666%;
+    width: 100%;
     color: #fff;
 }
-
 .header-text h2 {
-    font-size: 40px;
+    font-size: 5.3em;
+    margin-top: 22%;
 }
-
-.header-text h2 span {
-	padding: 10px;
-	color: #fff;
-	text-transform: uppercase;
+.header-text p {
+    font-size: 2em;
 }
-
-.header-text h3 span {
-	color: #fff;
-}
+.header-text .btn-playstore { width: 234px; height: 82px; }
 
 .btn-min-block {
     min-width: 170px;
@@ -434,8 +360,8 @@ section#intro {
 --- Services
 ============================ */
 .service-box {
-	background: #fff;
-	border: 1px solid #f7f7f7;
+	background: #1f2830;
+	border: 1px solid #1f2830;
 	padding: 20px;
 }
 
@@ -444,9 +370,7 @@ section#intro {
 }	
 
 
-/* ===========================
---- Works
-============================ */
+/* =========================== Works ============================ */
 
 #owl-works {
 
@@ -462,11 +386,7 @@ section#intro {
     height: auto;
 }	
 
-/* ===========================
---- Contact
-============================ */
-
-
+/* =========================== CONTATO ============================ */
 .form-group {
   margin-bottom: 20px;
 }
@@ -794,6 +714,45 @@ a.btn:focus{
 }
 
 /* Media queries */
+@media (min-width : 1025px) and (max-width : 1280px){
+    .header-text {
+        position: absolute;
+        top: 18%;
+        left: 1.5%;
+        right: auto;
+        width: 100%;
+        color: #fff;
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .header-text h2 {
+        font-size: 3.5em;
+        margin-top: 26%;
+    }
+    .header-text p {
+        font-size: 1.6em;
+    }
+
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        position: absolute;
+        top: 54%;
+        z-index: 5;
+        display: inline-block;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        left: 50px;
+        font-size: 35px;
+    }
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        right: 50px;
+        font-size: 35px;
+    }
+}
 
 @media(min-width:767px) {
     .navbar-custom.top-nav-collapse {
@@ -831,69 +790,247 @@ a.btn:focus{
 
 
 }
+
 @media (max-width:768px) {
     .navbar-custom {
-        padding: 25px 0;
+        padding: 15px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        background: transparent;
     }
-
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
+        background: transparent;
     }
-
 	#navigation {
-		padding:   0;
-	}
-	.site-logo{
-		margin: 0 0 0 30px;
-		float:none;
+		padding: 0 0;
+        margin: 0 0;
 	}
 	.navbar-custom ul.nav li a {
-		color: #eee;
+		color: #343434;
 	}
+    .navbar-custom ul.nav li a:hover {
+        color: #ffffff;
+    }
 	.navbar-custom ul.nav ul.dropdown-menu li {
-		border-bottom: 1px solid #aaa;
-
+		border-bottom: transparent;
 	}
 	.navbar-header {
-		margin-top:-40px;
-		padding:0;
+		margin: 0 0;
+		padding: 0 0;
 	}
 	.navbar-header button {
-		background: #111;
+		background: transparent;
 	}
-
 	.navbar-header button.navbar-toggle {
 		padding: 4px 15px;
-		font-size: 14px;
-		color: #fff;
+		font-size: 32px;
+		color: #343434;
 	}
-
 	.navbar-custom .nav {
-		background: #444;
+		background: transparent;
 	}
 
-	.service-box {
-		margin-bottom: 50px;
-	}
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        position: absolute;
+        top: 62%;
+        z-index: 5;
+        display: inline-block;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        left: 50px;
+        font-size: 35px;
+    }
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        right: 50px;
+        font-size: 35px;
+    }
 
-	.team-wrap {
-		margin-bottom: 30px;
-	}
+    .header-text {
+        position: absolute;
+        top: 28%;
+        left: 0;
+        right: auto;
+        width: 100%;
+        color: #fff;
+        padding: 0 18%;
+    }
+    .header-text h2 {
+        font-size: 3.9em;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .header-text p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .home-section { padding: 30px 0; }
 
-	form#contact-form {
-		margin-bottom: 50px;
-	}
+    .service-box {
+        margin-bottom: 50px;
+    }
 
-	.xs-marginbot-20 {
-		margin-bottom: 20px;
-	}
+    .team-wrap {
+        margin-bottom: 30px;
+    }
 
+    form#contact-form {
+        margin-bottom: 50px;
+    }
+
+    .xs-marginbot-20 {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media (min-width : 769px) and (max-width : 1024px) {
+    .header-text {
+        position: absolute;
+        top: 20%;
+        left: 1%;
+        right: auto;
+        width: 100%;
+        color: #fff;
+    }
+    .header-text h2 {
+        font-size: 2.6em;
+        margin-top: 22%;
+    }
+    .header-text p {
+        font-size: 1.3em;
+    }
+    .home-section { padding: 30px 0; }
+}
+
+
+@media (min-width : 600px) and (max-width : 767px) {
+    .navbar-nav {  margin: 10px 0; }
+    .navbar-custom {
+        margin: 0;
+        padding: 15px 0;
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        position: absolute;
+        top: 60%;
+        z-index: 5;
+        display: inline-block;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        left: 20px;
+        font-size: 35px;
+    }
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        right: 20px;
+        font-size: 35px;
+    }
+
+    .header-text {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        right: auto;
+        width: 100%;
+        color: #fff;
+        padding: 0 18%;
+    }
+    .header-text h2 {
+        font-size: 3em;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .header-text p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .home-section { padding: 30px 0; }
+}
+
+
+@media (min-width : 320px) and (max-width : 599px){
+    .navbar-nav {  margin: 0 0; padding: 0 0; }
+    .navbar-custom {
+        margin: 0 0;
+        padding: 12px 0;
+        text-transform: uppercase;
+        background-color: #fff;
+    }
+    .navbar-header button.navbar-toggle {
+        padding: 0 0;
+        margin-top: 15px;
+        font-size: 26px;
+        color: #343434;
+    }
+
+    .carousel-inner > .item {
+        margin-left:0;
+        margin-top: 88px;
+        margin-bottom: 0;
+        padding-left: 0;
+        width: 100%;
+        height: auto;
+    }
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-prev,
+    .carousel-control .icon-next {
+        position: absolute;
+        top: 60%;
+        z-index: 5;
+        display: inline-block;
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        left: 5px;
+        font-size: 25px;
+    }
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        right: 5px;
+        font-size: 25px;
+    }
+
+    .header-text {
+        position: absolute;
+        top: 0%;
+        left: 0;
+        right: auto;
+        width: 100%;
+        color: #fff;
+        padding: 0 10%;
+    }
+    .header-text h2 {
+        font-size: 1.8em;
+        margin-top: 10%;
+        text-align: center;
+    }
+    .header-text p {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .home-section { padding: 10px 0; }
 }
