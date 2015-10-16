@@ -217,6 +217,10 @@ a:focus {
 
 
 /* --- BG SECTION--- */
+.bg-newsletter { background: #1f2830; margin: 0; padding: 80px 0; }
+.bg-newsletter .section-heading h2 { margin-top: 0; padding-top: 0; }
+.bg-newsletter .btn-news { background-color: #7ba93b; border-radius: 5px; padding: 13px 0; }
+.bg-newsletter .btn-news:hover { background-color: #588532; border-radius: 5px; padding: 13px 0; }
 .bg-equipe {
 	background: #303945;
 }
@@ -584,6 +588,22 @@ form.search-form input:focus {
 }
 
 
+/* =========================== DIV ARTICLE > FUNDO ANIMATE ============================ */
+article { height: 280px; background: url("../img/fundo-cidade.png") repeat-x; background-position: center bottom; }
+article .icone-trem {
+    margin-top: 192.5px;
+    position: relative;
+    display: block;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 23s; /* Chrome, Safari, Opera */
+    animation-name: traind;
+    animation-iteration-count: infinite;
+}
+@keyframes traind {
+    0%   { left: -1200px; }
+    100% { left: 800px; }
+}
+
 
 /* =========================== DIV FOOTER ============================ */
 footer {
@@ -926,6 +946,9 @@ a.btn:focus{
     .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 5em; margin: 15px 0; font-weight: 600; }
     .home-section .bg-funcoes .txt-funcoes p { color: #303844; font-size: 1.8em; line-height: 1.5em; margin: 0 40px; }
 
+    .bg-newsletter { padding: 55px 0; }
+    .bg-newsletter .spacing-news { margin: 15px 0; }
+
     .service-box h5 { font-size: 2em; color: #cde3ef; font-weight: 600; }
     .service-box p { font-size: 1.1em; color: #ffffff; font-weight: 300; }
 
@@ -949,6 +972,13 @@ a.btn:focus{
         font-size: 1.3em;
     }
     .home-section { padding: 30px 0; }
+
+    .header-text { margin-top: 1.5%; left: 2%; }
+
+    .bg-newsletter { padding: 55px 0; }
+
+    .bg-equipe h5 { font-size: 2.2em; }
+    .bg-equipe p { font-size: 1.4em; }
 }
 
 
@@ -1019,6 +1049,8 @@ a.btn:focus{
     .home-section .bg-funcoes .spacing-top { margin-top: 0; padding: 0 0 0 0; height: auto; }
     .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 4em; margin: 15px 0; font-weight: 600; }
     .home-section .bg-funcoes .txt-funcoes p { color: #303844; font-size: 1.6em; line-height: 1.5em; }
+
+    .bg-equipe .img-responsive { width: 100%; }
 }
 
 
@@ -1097,6 +1129,9 @@ a.btn:focus{
     .home-section .bg-funcoes .spacing-top { margin-top: 0; padding: 0 0; height: auto; }
     .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 3em; margin: 15px 0; font-weight: 600; }
     .home-section .bg-funcoes .txt-funcoes p { color: #303844; font-size: 1.3em; line-height: 1.5em; margin: 0 0; }
+
+    .bg-newsletter { padding: 40px 0; }
+    .bg-newsletter .section-heading h2 { margin-top: 0; padding-top: 0; font-size: 2.7em; }
 
     .bg-equipe .col-xs-6 { width: 100%; text-align: center; }
     .bg-equipe .service-box { margin: 5% 0; }
