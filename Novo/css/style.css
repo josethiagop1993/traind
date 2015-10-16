@@ -364,10 +364,12 @@ video {
 	border: 1px solid #1f2830;
 	padding: 20px;
 }
-
-.service-icon {
+.service-box .service-icon {
 	margin-bottom: 20px;
-}	
+}
+.service-box h5 { font-size: 2em; color: #cde3ef; font-weight: 600; }
+.service-box p { font-size: 1.2em; color: #ffffff; font-weight: 300; }
+
 
 
 /* =========================== Works ============================ */
@@ -549,28 +551,20 @@ form.search-form input:focus {
 
 
 
-/* ===========================
---- Footer
-============================ */
-
+/* =========================== DIV FOOTER ============================ */
 footer {
-    background-color: #404040;
+    background: #f0f3f8;
+    text-align: center;
+    padding: 30px 0 0 0;
+    margin: 0 0;
 }
-
-footer {
-	text-align: center;
-	padding: 50px 0 ;
-	
-}
-
-footer p {
-	color: #f8f8f8;
-	font-size: 14px;
-}
-
+footer hr { border: 1px solid #b8b8b8; margin: 0 0; padding: 0; }
+footer p.txt-rodape { font-size: 1em; color: #343434; margin: 25px 0 0 0; padding: 0; }
 footer a.totop {
-	color: #fff;
-	margin-bottom: 30px;
+	color: #343434;
+    font-size: 20px;
+    margin: 0 0;
+    padding: 0 0;
 }
 footer a.totop:focus {
 	outline: 0;
@@ -796,7 +790,7 @@ a.btn:focus{
         padding: 15px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: transparent;
+        background: #ffffff;
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;
@@ -810,7 +804,7 @@ a.btn:focus{
 		color: #343434;
 	}
     .navbar-custom ul.nav li a:hover {
-        color: #ffffff;
+        color: #7baa3b;
     }
 	.navbar-custom ul.nav ul.dropdown-menu li {
 		border-bottom: transparent;
@@ -916,7 +910,21 @@ a.btn:focus{
         margin: 0;
         padding: 15px 0;
         text-transform: uppercase;
-        background-color: transparent;
+        background-color: #ffffff;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        background: transparent;
+    }
+    #navigation {
+        padding: 0 0;
+        margin: 0 0;
+    }
+    .navbar-custom ul.nav li a {
+        color: #343434;
+    }
+    .navbar-custom ul.nav li a:hover {
+        color: #7baa3b;
     }
 
     .carousel-control .glyphicon-chevron-left,
