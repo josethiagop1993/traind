@@ -56,6 +56,7 @@ a:focus {
     padding: 15px 0;
     text-transform: uppercase;
     background-color: #fff;
+    box-shadow: 0 0.2px 10px #777;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
@@ -85,12 +86,14 @@ a:focus {
     outline: 0;
     color: #7baa3b;
     background-color: transparent;
+    font-size: 1.1em;
 }
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
     background-color: transparent;
+    font-size: 1.1em;
 }
 
 .navbar-custom .nav li.active {
@@ -143,6 +146,35 @@ a:focus {
 .home-section .bg-funcoes {
     background-color: #fafbfb;
     margin: 25px 0;
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.home-section .bg-funcoes:before, .home-section .bg-funcoes:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.home-section .bg-funcoes:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
 }
 .home-section .bg-funcoes .txt-funcoes { height: 532px; vertical-align: middle; display: table-cell; padding-top: 120px; }
 .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 4em; margin: 15px 0; font-weight: 600; }
@@ -205,6 +237,8 @@ a:focus {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f4f9', endColorstr='#cee4f0', GradientType=0 );
     padding-top: 50px;
 }
+.bg-contato .btn-green { background-color: #7ba93b; border: 0; }
+.bg-contato .btn-green:hover { background-color: #588532; border: 0; }
 
 /* --- COLOR SECTION --- */
 .text-light {
@@ -268,7 +302,7 @@ section#intro {
 .carousel-control .icon-prev, 
 .carousel-control .icon-next {
 	position: absolute;
-	top: 48%;
+	top: 52%;
 	z-index: 5;
 	display: inline-block;
 }
@@ -324,7 +358,7 @@ video {
 }
 .header-text h2 {
     font-size: 5.3em;
-    margin-top: 22%;
+    margin-top: 27%;
 }
 .header-text p {
     font-size: 2em;
@@ -356,9 +390,7 @@ video {
 
 
 
-/* ===========================
---- Services
-============================ */
+/* =========================== EQUIPE TRAIND ============================ */
 .service-box {
 	background: #1f2830;
 	border: 1px solid #1f2830;
@@ -369,7 +401,9 @@ video {
 }
 .service-box h5 { font-size: 2em; color: #cde3ef; font-weight: 600; }
 .service-box p { font-size: 1.2em; color: #ffffff; font-weight: 300; }
-
+.service-box a { border: 0; }
+.service-box a.btn-linkedin { background-color: #0077b5; border-radius: 6px; }
+.service-box a:hover.btn-linkedin { background-color: #006b91; border-radius: 6px; }
 
 
 /* =========================== Works ============================ */
@@ -559,7 +593,10 @@ footer {
     margin: 0 0;
 }
 footer hr { border: 1px solid #b8b8b8; margin: 0 0; padding: 0; }
+footer .txt-links a { font-size: 1em; color: #202830; }
+footer .txt-links a:hover,a:focus { font-size: 1em; color: #7ba93b; }
 footer p.txt-rodape { font-size: 1em; color: #343434; margin: 25px 0 0 0; padding: 0; }
+footer a { border: 0; }
 footer a.totop {
 	color: #343434;
     font-size: 20px;
@@ -569,6 +606,9 @@ footer a.totop {
 footer a.totop:focus {
 	outline: 0;
 }
+footer a.btn-face { background-color: #475a93; border-radius: 4px; padding: 8px 6px; margin: 0 4px; }
+footer a.btn-google { background-color: #c54b55; border-radius: 4px; padding: 8px 6px;  margin: 0 4px; }
+footer a.btn-messenger { background-color: #f5911e; border-radius: 4px; padding: 8px 6px;  margin: 0 4px; }
 
 
 
@@ -863,7 +903,6 @@ a.btn:focus{
         font-size: 1.5em;
         text-align: center;
     }
-    .home-section { padding: 30px 0; }
 
     .service-box {
         margin-bottom: 50px;
@@ -880,6 +919,15 @@ a.btn:focus{
     .xs-marginbot-20 {
         margin-bottom: 20px;
     }
+
+    .home-section { padding: 30px 0; margin: 0 0; }
+    .home-section .bg-funcoes { width: 94%; margin: 6% 3%; padding: 6% 30px; height: auto; }
+    .home-section .bg-funcoes .spacing-top { margin-top: 0; padding: 0 0; height: auto; }
+    .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 5em; margin: 15px 0; font-weight: 600; }
+    .home-section .bg-funcoes .txt-funcoes p { color: #303844; font-size: 1.8em; line-height: 1.5em; margin: 0 40px; }
+
+    .service-box h5 { font-size: 2em; color: #cde3ef; font-weight: 600; }
+    .service-box p { font-size: 1.1em; color: #ffffff; font-weight: 300; }
 
 }
 
@@ -966,7 +1014,11 @@ a.btn:focus{
         text-align: center;
     }
 
-    .home-section { padding: 30px 0; }
+    .home-section { padding: 30px 0; margin: 0 0; }
+    .home-section .bg-funcoes { width: 94%; margin: 6% 3%; padding: 6% 30px; height: auto; }
+    .home-section .bg-funcoes .spacing-top { margin-top: 0; padding: 0 0 0 0; height: auto; }
+    .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 4em; margin: 15px 0; font-weight: 600; }
+    .home-section .bg-funcoes .txt-funcoes p { color: #303844; font-size: 1.6em; line-height: 1.5em; }
 }
 
 
@@ -1040,5 +1092,16 @@ a.btn:focus{
         text-align: center;
     }
 
-    .home-section { padding: 10px 0; }
+    .home-section { padding: 10px 0; margin: 0 0; }
+    .home-section .bg-funcoes { width: 94%; margin: 6% 3%; padding: 6% 30px; height: auto; }
+    .home-section .bg-funcoes .spacing-top { margin-top: 0; padding: 0 0; height: auto; }
+    .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 3em; margin: 15px 0; font-weight: 600; }
+    .home-section .bg-funcoes .txt-funcoes p { color: #303844; font-size: 1.3em; line-height: 1.5em; margin: 0 0; }
+
+    .bg-equipe .col-xs-6 { width: 100%; text-align: center; }
+    .bg-equipe .service-box { margin: 5% 0; }
+    .bg-equipe .col-xs-6 .img-responsive { width: 100%; }
+
+    footer .col-xs-6 { width: 94%; margin: 0 3%; padding: 0 0; text-align: center; height: auto; }
+    footer hr { margin-top: 20px; }
 }
