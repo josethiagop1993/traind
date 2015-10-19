@@ -609,14 +609,11 @@ article .icone-trem {
     position: relative;
     display: inline;
     clear: none;
-    -webkit-animation-name: traind; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 24s; /* Chrome, Safari, Opera */
-    animation-name: traind;
-    animation-iteration-count: infinite;
+    animation: traind 24s infinite alternate;
 }
 @keyframes traind {
-    0%   { left: -1200px; }
-    100% { left: 250px; }
+    0%   { left: -1500px; }
+    100% { left: 120px; }
 }
 
 
