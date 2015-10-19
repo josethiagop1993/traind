@@ -1,6 +1,6 @@
 /* ==== Google font ==== */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700,900);
-@import url('http://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700');
+@import url('css/roboto.css');
+@import url('css/mukta.css');
 
 body {
     width: 100%;
@@ -51,20 +51,28 @@ a:focus {
 
 /* ------- Navigation ------------ */
 .navbar-nav {  margin: 10px 0; }
-.navbar-custom {
+.navbar-custom,.navbar {
     margin: 0;
     padding: 15px 0;
     text-transform: uppercase;
-    background-color: #fff;
+    background: #ffffff;
     box-shadow: 0 0.2px 10px #777;
 }
+.top-nav-collapse { background: #fff; }
+.navbar-inverse {
+    background-color: #ffffff;
+    border: 0;
+}
+.navbar-inverse .navbar-nav>li>a { color: #343434; font-size: 1.1em; font-weight: bold; }
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:visited,
+.navbar-inverse .navbar-nav>li>a:focus { color: #7ba93b; font-size: 1.1em; font-weight: bold; }
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
 }
-
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
@@ -193,6 +201,12 @@ a:focus {
 	line-height: 1.6em;
 }
 
+.equipe-section { padding: 120px 0 80px 0; margin: 0 0; }
+.equipe-section .bg-funcoes { width: 94%; margin: 6% 3%; padding: 6% 30px; height: auto; }
+.equipe-section .bg-funcoes .spacing-top { margin-top: 0; padding: 0 0 0 0; height: auto; }
+.equipe-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 4em; margin: 15px 0; font-weight: 600; }
+.equipe-section .bg-funcoes .txt-funcoes p { color: #303844; font-size: 1.6em; line-height: 1.5em; }
+
 .color-equipe .section-heading h2 {
 	color: #ecedef;
 }
@@ -216,7 +230,7 @@ a:focus {
 }
 
 
-/* --- BG SECTION--- */
+/* --- BG SECTION --- */
 .bg-newsletter { background: #1f2830; margin: 0; padding: 80px 0; }
 .bg-newsletter .section-heading h2 { margin-top: 0; padding-top: 0; }
 .bg-newsletter .btn-news { background-color: #7ba93b; border-radius: 5px; padding: 13px 0; }
@@ -239,7 +253,7 @@ a:focus {
     background: -ms-linear-gradient(top, rgba(241,244,249,1) 0%, rgba(206,228,240,1) 75%, rgba(206,228,240,1) 100%);
     background: linear-gradient(to bottom, rgba(241,244,249,1) 0%, rgba(206,228,240,1) 75%, rgba(206,228,240,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f4f9', endColorstr='#cee4f0', GradientType=0 );
-    padding-top: 50px;
+    padding-top: 100px;
 }
 .bg-contato .btn-green { background-color: #7ba93b; border: 0; }
 .bg-contato .btn-green:hover { background-color: #588532; border: 0; }
@@ -593,15 +607,16 @@ article { height: 280px; background: url("../img/fundo-cidade.png") repeat-x; ba
 article .icone-trem {
     margin-top: 192.5px;
     position: relative;
-    display: block;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 23s; /* Chrome, Safari, Opera */
+    display: inline;
+    clear: none;
+    -webkit-animation-name: traind; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 24s; /* Chrome, Safari, Opera */
     animation-name: traind;
     animation-iteration-count: infinite;
 }
 @keyframes traind {
     0%   { left: -1200px; }
-    100% { left: 800px; }
+    100% { left: 250px; }
 }
 
 
@@ -809,7 +824,7 @@ a.btn:focus{
 }
 
 @media(min-width:767px) {
-    .navbar-custom.top-nav-collapse {
+    .navbar-custom .top-nav-collapse {
         border-bottom: 1px solid rgba(255, 255, 255, .3);
         background: #ffffff;
     }
@@ -818,15 +833,15 @@ a.btn:focus{
         padding: 25px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background: #fff;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
-        padding: 0;
-        background-color: #000;
+        padding: 6px 0;
+        background-color: #ffffff;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -870,17 +885,28 @@ a.btn:focus{
 		border-bottom: transparent;
 	}
 	.navbar-header {
+        height: 70px;
 		margin: 0 0;
 		padding: 0 0;
 	}
+    .navbar-header .brand { margin-left: 15px; }
 	.navbar-header button {
 		background: transparent;
 	}
 	.navbar-header button.navbar-toggle {
-		padding: 4px 15px;
-		font-size: 32px;
-		color: #343434;
+		padding: 15px 15px;
+        margin: 13px 15px;
+		font-size: 35px;
+		color: #ffffff;
+        background-color: #7baa3b;
+        border: none;
 	}
+    .navbar-header button.navbar-toggle:hover,
+    .navbar-header button.navbar-toggle:visited,
+    .navbar-header button.navbar-toggle:focus { background-color: #588532; }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { margin-top: 0; border: none; background-color: transparent; padding-bottom: 0; }
+
 	.navbar-custom .nav {
 		background: transparent;
 	}
@@ -940,11 +966,13 @@ a.btn:focus{
         margin-bottom: 20px;
     }
 
-    .home-section { padding: 30px 0; margin: 0 0; }
+    .home-section { padding: 0 0; margin: 0 0; }
     .home-section .bg-funcoes { width: 94%; margin: 6% 3%; padding: 6% 30px; height: auto; }
     .home-section .bg-funcoes .spacing-top { margin-top: 0; padding: 0 0; height: auto; }
     .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 5em; margin: 15px 0; font-weight: 600; }
     .home-section .bg-funcoes .txt-funcoes p { color: #303844; font-size: 1.8em; line-height: 1.5em; margin: 0 40px; }
+
+    .equipe-section { padding: 120px 0 40px 0; margin: 0 0; }
 
     .bg-newsletter { padding: 55px 0; }
     .bg-newsletter .spacing-news { margin: 15px 0; }
@@ -971,7 +999,7 @@ a.btn:focus{
     .header-text p {
         font-size: 1.3em;
     }
-    .home-section { padding: 30px 0; }
+    .home-section { padding: 120px 0; }
 
     .header-text { margin-top: 1.5%; left: 2%; }
 
@@ -983,7 +1011,7 @@ a.btn:focus{
 
 
 @media (min-width : 600px) and (max-width : 767px) {
-    .navbar-nav {  margin: 10px 0; }
+    .navbar-nav {  margin: 0 0; padding: 0 0; }
     .navbar-custom {
         margin: 0;
         padding: 15px 0;
@@ -1004,6 +1032,20 @@ a.btn:focus{
     .navbar-custom ul.nav li a:hover {
         color: #7baa3b;
     }
+
+    .navbar-header button.navbar-toggle {
+        padding: 12px 10px;
+        margin: 18px 15px;
+        font-size: 35px;
+        color: #ffffff;
+        background-color: #7baa3b;
+        border: none;
+    }
+    .navbar-header button.navbar-toggle:hover,
+    .navbar-header button.navbar-toggle:visited,
+    .navbar-header button.navbar-toggle:focus { background-color: #588532; }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { margin-top: 15px; border: none; background-color: #cde3ef; padding-bottom: 0; }
 
     .carousel-control .glyphicon-chevron-left,
     .carousel-control .glyphicon-chevron-right,
@@ -1044,7 +1086,7 @@ a.btn:focus{
         text-align: center;
     }
 
-    .home-section { padding: 30px 0; margin: 0 0; }
+    .home-section { padding: 0 0; margin: 0 0; }
     .home-section .bg-funcoes { width: 94%; margin: 6% 3%; padding: 6% 30px; height: auto; }
     .home-section .bg-funcoes .spacing-top { margin-top: 0; padding: 0 0 0 0; height: auto; }
     .home-section .bg-funcoes .txt-funcoes h1 { color: #202830; font-size: 4em; margin: 15px 0; font-weight: 600; }
@@ -1058,20 +1100,29 @@ a.btn:focus{
     .navbar-nav {  margin: 0 0; padding: 0 0; }
     .navbar-custom {
         margin: 0 0;
-        padding: 12px 0;
+        padding: 10px 0;
         text-transform: uppercase;
         background-color: #fff;
     }
     .navbar-header button.navbar-toggle {
-        padding: 0 0;
-        margin-top: 15px;
-        font-size: 26px;
-        color: #343434;
+        padding: 10px 10px;
+        font-size: 25px;
+        color: #ffffff;
+        background-color: #7baa3b;
+        border: none;
+        margin: 16px 10px;
     }
+    .navbar-header button.navbar-toggle:hover,
+    .navbar-header button.navbar-toggle:visited,
+    .navbar-header button.navbar-toggle:focus { background-color: #588532; }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { margin-top: 15px; border: none; background-color: #cde3ef; padding-bottom: 0; }
+
+    .navbar-header .brand { margin-left: 6px; }
 
     .carousel-inner > .item {
         margin-left:0;
-        margin-top: 88px;
+        margin-top: 99px;
         margin-bottom: 0;
         padding-left: 0;
         width: 100%;
@@ -1090,7 +1141,7 @@ a.btn:focus{
     .carousel-control .icon-prev,
     .carousel-control .icon-next {
         position: absolute;
-        top: 60%;
+        top: 62%;
         z-index: 5;
         display: inline-block;
     }
