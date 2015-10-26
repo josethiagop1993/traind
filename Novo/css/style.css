@@ -221,7 +221,7 @@ a:focus {
 }
 
 .section-heading p {
-	font-size: 20px;
+	font-size: 1.3em;
 	line-height: 1.6em;
 }
 
@@ -266,15 +266,13 @@ a:focus {
 .bg-newsletter .section-heading h2 { margin-top: 0; padding-top: 0; }
 .bg-newsletter .btn-news { background-color: #7ba93b; border-radius: 5px; padding: 13px 0; }
 .bg-newsletter .btn-news:hover { background-color: #588532; border-radius: 5px; padding: 13px 0; }
-.bg-equipe {
-	background: #303945;
-}
-.bg-design {
-    background: #88af34;
-}
-.bg-dark {
-	background: #404040;
-}
+.bg-equipe { background: #303945; }
+.bg-design { background: #88af34; }
+.bg-design .btn-manualapp { background: #303945; border-radius: 5px; border-bottom: 3px solid #1f2830; color: #ffffff; font-size: 1.3em; margin-top: 30px; }
+.bg-design .btn-manualapp:hover,
+.bg-design .btn-manualapp:focus,
+.bg-design .btn-manualapp:visited { background: #1f2830; border-radius: 5px; border-bottom: 3px solid #303945; color: #ffffff; font-size: 1.3em; margin-top: 30px; }
+.bg-dark { background: #404040; }
 .bg-contato {
     background: rgba(241,244,249,1);
     background: -moz-linear-gradient(top, rgba(241,244,249,1) 0%, rgba(206,228,240,1) 75%, rgba(206,228,240,1) 100%);
