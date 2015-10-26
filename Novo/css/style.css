@@ -256,7 +256,7 @@ a:focus {
 
 /* --- BG SECTION --- */
 .bg-sobre { border-bottom: 1px solid #b8b8b8; margin-bottom: 40px; padding-bottom: 60px; }
-.bg-sobre .txt-sobre { margin-top: 20px; }
+.bg-sobre .txt-sobre { margin-top: 50px; }
 .bg-sobre .txt-sobre h2 { color: #1f2830; font-size: 3.2em; font-weight: bold; }
 .bg-sobre .txt-sobre h3 { color: #1f2830; font-size: 1.7em; font-weight: bold; }
 .bg-sobre .txt-sobre p { color: #303945; font-size: 1.5em; }
