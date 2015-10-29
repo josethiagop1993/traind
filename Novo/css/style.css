@@ -259,7 +259,7 @@ a:focus {
 .bg-sobre .txt-sobre { margin-top: 50px; }
 .bg-sobre .txt-sobre h2 { color: #1f2830; font-size: 3.2em; font-weight: bold; }
 .bg-sobre .txt-sobre h3 { color: #1f2830; font-size: 1.7em; font-weight: bold; }
-.bg-sobre .txt-sobre p { color: #303945; font-size: 1.5em; }
+.bg-sobre .txt-sobre p { color: #303945; font-size: 1.4em; }
 .bg-sobre .txt-sobre .icone-correct { margin-right: 10px; }
 .bg-sobre .txt-sobre .txt-option { font-size: 1.3em; }
 .bg-newsletter { background: #1f2830; margin: 0; padding: 80px 0; }
@@ -1048,10 +1048,10 @@ a.btn:focus{
     .service-box p { font-size: 1.1em; color: #ffffff; font-weight: 300; }
 
     .bg-sobre { border-bottom: 1px solid #b8b8b8; margin-bottom: 0; padding: 30px 0; text-align: center;  }
-    .bg-sobre .txt-sobre { margin-top: 0px; }
+    .bg-sobre .txt-sobre { margin-top: 0px; padding: 0 100px; }
     .bg-sobre .txt-sobre h2 { color: #1f2830; font-size: 3em; font-weight: bold; }
     .bg-sobre .txt-sobre h3 { color: #1f2830; font-size: 1.7em; font-weight: bold; }
-    .bg-sobre .txt-sobre p { color: #303945; font-size: 1.350em; padding: 0 30px; }
+    .bg-sobre .txt-sobre p { color: #303945; font-size: 1.3em; padding: 0 30px; }
 
     .section-heading p { font-size: 1.2em; }
 }
@@ -1063,7 +1063,7 @@ a.btn:focus{
     .bg-sobre .txt-sobre { margin-top: 0; }
     .bg-sobre .txt-sobre h2 { font-size: 2.4em; }
     .bg-sobre .txt-sobre h3 { font-size: 1.6em; }
-    .bg-sobre .txt-sobre p { font-size: 1.2em; }
+    .bg-sobre .txt-sobre p { font-size: 1.3em; }
     .bg-sobre .txt-sobre .txt-option { font-size: 1.1em; }
     .bg-sobre .txt-sobre .icone-correct { width: 12%; }
 
@@ -1172,6 +1172,7 @@ a.btn:focus{
     }
 
     .bg-sobre { margin-top: 0; padding-top: 40px; }
+    .bg-sobre .txt-sobre { margin-top: 0px; padding: 0 40px; }
     .bg-sobre .txt-sobre .txt-option { width: 75%; font-size: 1.350em; margin: 20px 12.5%; }
 
     .home-section { padding: 0 0; margin: 0 0; }
@@ -1263,8 +1264,9 @@ a.btn:focus{
         text-align: center;
     }
 
-    .bg-sobre { margin-top: 100px; padding: 10px 30px; }
-    .bg-sobre .txt-sobre h2 { font-size: 2.1em; }
+    .bg-sobre { margin-top: 100px; padding: 10px 40px; }
+    .bg-sobre .txt-sobre { margin: 0px 0; padding: 0 0; }
+    .bg-sobre .txt-sobre h2 { font-size: 2em; }
     .bg-sobre .txt-sobre p { font-size: 1.2em; padding: 0 0; }
     .bg-sobre .txt-sobre .txt-option { font-size: 1.2em; }
 
